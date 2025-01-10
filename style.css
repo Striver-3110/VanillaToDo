@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    /* margin-bottom: 100px; */
+}
+
+.container{
+    width: inherit;
+    background: #35fdadbd;
+    height: inherit;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.add-todo-form{
+    height: fit-content;
+    background: #14ed46c8;
+    padding: 3rem;
+}
