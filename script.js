@@ -3,13 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const todoInput = document.getElementById("todo-input");
     const todoList = document.getElementById("todo-list");
 
-//   let todos = [
-//     {
-//       title: "lets do it",
-//       completed: false,
-//       index:0
-//     },
-//   ];
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
