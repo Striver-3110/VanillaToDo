@@ -13,15 +13,92 @@ body{
 
 .container{
     width: inherit;
-    background: #35fdadbd;
+    background: #e7eaf6 ;
     height: inherit;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 4rem; */
+}
+
+.title{
+    width: 100vw;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: Cursive;
+    background: #113f67;
+    color: #ffffffbd;
 }
 
 .add-todo-form{
     height: fit-content;
-    background: #14ed46c8;
+    width: 75%;
+    border-radius: 0.2rem;
+    border: #002eb8 solid 1px;
+    background: #38598b;
     padding: 3rem;
+    display: flex;
+    gap: 1rem;
+    /* background: transparent; */
+}
+
+.todo-input{
+    padding: 0.9rem;
+    width: 300px;
+    border-radius: 10px;
+    border: #5a5aff solid 2px;
+    font-size: medium;
+}
+.todo-input:focus{
+    background: #d1ddff;
+}
+
+.submit-btn{
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: #5a5aff solid 2px;
+    background: #037ba3;
+    font-size: medium;
+    color: #ffffffbd;
+}
+
+.todo-list-container{
+    background: #a2a8d3;
+    border: #113f67 solid 2px;
+    border-radius: 10px;
+    width: 75%;
+    height: fit-content;
+    padding: 3rem;
+}
+
+li{
+    list-style: none;
+    font-size: medium;
+    display: flex;
+    width: 75%;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-between;
+    background: #848cc8;
+}
+
+li .item-desc{
+    color: rgb(221, 231, 252);
+    font-weight: bold;
+}
+.btn{
+    padding: 0.2rem;
+    font-size: medium;
+    
+    border-radius: 2px;
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color:gray
 }

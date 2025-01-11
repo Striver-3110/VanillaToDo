@@ -9,11 +9,27 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title ">
+            Todo - The App Keep to keep your self on track!!
+        </h1>
         <form class="add-todo-form" id="add-todo-form"">
             <input class="todo-input" id="todo-input" type="" name="" value="">
             <button id="submit-btn" type="submit" class="submit-btn">Submit</button>
         </form>
-        <div id="todo-list" class="todo-list"></div>
+        <div id="todo-list-container" class="todo-list-container">
+            <ul id="todo-list" class="todo-list">
+                <li class="item">
+                    <span class="item-desc">
+                        this is to do
+                    </span>
+                    <div class="buttons">
+                        <button class="btn btn-delete">delete</button>
+                        <button class="btn btn-edit">edit</button>
+                        <button class="btn btn-complete">complete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
     </div>
     <script src="script.js"></script>
