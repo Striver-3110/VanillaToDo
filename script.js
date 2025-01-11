@@ -29,21 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const description = document.createElement("span");
     description.textContent = inputValue;
+    description.classList.add("item-desc");
 
     const buttons = document.createElement("div")
+    buttons.classList.add("buttons");
 
     const deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete";
+    deleteButton.classList.add("btn-delete");
+    deleteButton.classList.add("btn");
     deleteButton.addEventListener("click", () =>deleteTodo(todoItem));
 
     const editButton = document.createElement("button");
     editButton.addEventListener("click", ()=>editTodo(todoItem, description))
     editButton.innerText = "Edit";
+    editButton.classList.add("btn-edit");
+    editButton.classList.add("btn");
 
 
     const completeButton = document.createElement("button");
     completeButton.addEventListener("click", ()=>completeTodo(description));
     completeButton.innerText = "Complete";
+    completeButton.classList.add("btn-complete");
+    completeButton.classList.add("btn");
 
     buttons.append(deleteButton,editButton,completeButton);
     todoItem.append(description,buttons);
